@@ -12,6 +12,7 @@ Follow the setup instructions that page to add postgres to your $PATH.
 ```
 pip install -r requirements.txt
 ```
+## Python 3 recommended
 
 ## Create the PostgreSQL Database and Migrate to 
 
