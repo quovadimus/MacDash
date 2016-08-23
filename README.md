@@ -14,6 +14,12 @@ pip install -r requirements.txt
 ```
 
 ## Create the PostgreSQL Database and Migrate to 
+
+Create Database (default here is 'macdash')
+```
+createdb macdash
+```
+
 Create Tables(temporary)
 ```
 python manage.py migrate
@@ -23,6 +29,8 @@ python manage.py migrate
 ```
 python manage.py createsuperuser
 ```
+Enter your desired username, email and password (8 character minimum.
+
 
 ## Run the built in server
 ```
