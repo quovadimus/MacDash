@@ -13,7 +13,7 @@ def _format_device(computer):
         comp_dict['last_contact_time_utc'] = computer.last_contact_time_utc.strftime('%Y-%m-%d %H:%M:%S')
     else:
         comp_dict['last_contact_time_utc'] = 'Unknown'
-    comp_dict['site'] = computer.site.name
+    #comp_dict['site'] = computer.site.name
     return comp_dict
 
 # Create your views here.
@@ -33,7 +33,7 @@ def devices(request):
             ('mac_address', 'MAC Address'),
             ('jamf_version', 'JAMF Version'),
             ('last_contact_time_utc', 'Last Check-in'),
-            ('site', 'Site')
+            #('site', 'Site')
         ),
         'page_title': 'Computers',
         'menu_active': 'devices',
@@ -79,7 +79,7 @@ def application_installed_list(request, pk):
             ('mac_address', 'MAC Address'),
             ('jamf_version', 'JAMF Version'),
             ('last_contact_time_utc', 'Last Check-in'),
-            ('site', 'Site')
+            #('site', 'Site')
         ),
         'page_title': page_title,
         'link_column': ('name', 'singledevice'),
