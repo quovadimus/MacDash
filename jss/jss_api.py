@@ -24,7 +24,7 @@ class JSSAPISession(object):
             endpoint_url=endpoint_url,
         )
 
-        api_request = self.api_session.get(request_url)
+        api_request = self.api_session.get(request_url, verify=False)
         return api_request
 
     def lookup_by_serial(self, serial_number, session=None):
