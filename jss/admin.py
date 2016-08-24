@@ -42,5 +42,5 @@ class ComputerApplicationsAdmin(admin.ModelAdmin):
         return False
 
 admin.site.register(Computer, ComputerAdmin)
-admin.site.register(Site, SiteAdmin)
+#admin.site.register(Site, SiteAdmin)
 admin.site.register(ComputerApplication, ComputerApplicationsAdmin)
