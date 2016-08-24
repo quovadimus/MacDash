@@ -44,7 +44,7 @@ class Computer(models.Model):
     total_ram_mb = models.CharField(max_length=200, null=True)
     real_name = models.CharField(max_length=200, null=True)
     building = models.CharField(max_length=200, null=True)
-    site = models.ForeignKey(Site, on_delete=models.CASCADE, null=True, related_name='computers')
+    #site = models.ForeignKey(Site, on_delete=models.CASCADE, null=True, related_name='computers')
     applications = models.ManyToManyField(ComputerApplication, max_length=200, related_name='computers')
 
     def __str__(self):
